@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Página de ONG Renacer, compromiso ambiental y restauración ecológica en Argentina.">
+    <meta name="keywords" content="HTML, CSS, JavaScript">
+    <meta name="author" content="Thomas Zyska">
+    <link rel="icon" type="image/x-icon" href="../../../img/favicon-16x16.png">
+    <title>Delta del Paraná - Renacer</title>
+    <link rel="stylesheet" href="../../styles/index.css">
+    <link rel="stylesheet" href="../../styles/proyectos.css">
+</head>
+
+<body>
+
+<header>
+    <picture>
+        <a href="../../home.html">
+            <source media="(min-width: 678px)" srcset="../../img/logo.png">
+            <img src="../../img/logo.png" alt="" id="logo">
+        </a>
+    </picture>
+    <a href="../../home.html" id="nombre">renacer</a>
+    <button aria-controls="menu-principal" aria-expanded="false" aria-label="Abrir menú" class="hamburguesa" type="button"><span></span><span></span><span></span></button>
+
+    <nav id="menu-principal">
+        <button class="menu-cerrar" type="button" aria-label="Cerrar menú">
+            ✕
+        </button>
+    <a data-i18n="navNosotros" href="../nosotros.html">NOSOTROS</a>
+    <a data-i18n="navProyectos" href="../proyectos.html">PROYECTOS</a>
+    <a data-i18n="navMapa" href="../mapa.html">MAPA</a>
+    <a data-i18n="navContacto" href="../contacto.html">CONTACTO</a>
+    <a class="boton" data-i18n="navDona" href="../dona.html">DONÁ</a>
+    </nav>
+</header>
+
+<div class="menu-overlay" data-menu-overlay></div>
+
+<main>
+
+  <section class="proy-hero" aria-label="Proyecto Delta del Paraná">
+    <div class="proy-hero__wrap">
+      <p class="proy-hero__tag">Humedales · Restauración</p>
+      <br>
+      <picture>
+        <source media="(min-width: 678px)" srcset="../../img/delta-intro.jpg">
+        <img
+          src="../../img/delta-intro.jpg"
+          alt="Delta del Paraná"
+          id="img-hero"
+        >
+      </picture>
+      <h1>Delta del Paraná</h1>
+      <p class="proy-hero__bajada">
+        Recuperamos humedales dañados por incendios y degradación, reintroduciendo vegetación nativa,
+        estabilizando suelos y fortaleciendo la resiliencia del ecosistema.
+      </p>
+
+      <div class="proy-cta">
+        <a class="proy-btn" href="../dona.html">Donar a este proyecto</a>
+        <a class="proy-btn sec" href="#galeria">Ver galería</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="proy-wrap">
+
+    <article class="bloque" aria-label="Acumulador del proyecto">
+      <div class="acum-head">
+        <div class="acum-txt">
+          <h2>Acumulado del proyecto</h2>
+        </div>
+
+        <span class="proy-hero__tag">Delta del Paraná</span>
+      </div>
+
+      <div class="acum-numeros" id="acumCard" data-proyecto="delta-parana">
+        <div class="acum-item">
+          <div class="k">Acumulado</div>
+          <div class="v" id="acumValor">$ 0</div>
+        </div>
+
+        <div class="acum-item">
+          <div class="k">Meta</div>
+          <div class="v" id="metaValor">$ 0</div>
+        </div>
+
+        <div class="acum-item">
+          <div class="k">Progreso</div>
+          <div class="v" id="pctValor">0%</div>
+        </div>
+
+        <div class="acum-item">
+          <div class="k">Estado</div>
+          <div class="v" id="estadoValor">En curso</div>
+        </div>
+      </div>
+
+      <div class="barra" aria-label="Progreso del proyecto">
+        <div id="barraFill" style="width:0%;"></div>
+      </div>
+
+      <div class="acum-foot">
+        <p>Gracias por ayudar a recuperar los humedales.</p>
+        <a class="proy-btn sec" href="../dona.html">Ir a Doná</a>
+      </div>
+    </article>
+
+    <article class="bloque">
+      <h2>¿Por qué el Delta importa?</h2>
+      <p>
+        El Delta del Paraná es uno de los sistemas de humedales más grandes de Sudamérica: regula inundaciones,
+        filtra agua, almacena carbono y sostiene una biodiversidad enorme. Cuando se degrada, perdemos servicios
+        ecosistémicos clave y se vuelve más vulnerable a incendios, erosión y especies invasoras.
+      </p>
+    </article>
+
+    
+    <article class="bloque">
+        <h2>Qué hacemos en Renacer</h2>
+        <p>
+            Trabajamos con restauración ecológica aplicada: recolección de material vegetal, viverización,
+            plantación de nativas en áreas prioritarias, control de invasoras donde corresponde y monitoreo
+            de supervivencia. El objetivo es acelerar la recuperación natural y mejorar la conectividad del hábitat.
+        </p>
+        <ul class="proy-puntos">
+            <li>Reintroducción de especies nativas.</li>
+            <li>Monitoreo de supervivencia y mantenimiento.</li>
+            <li>Articulación con actores locales.</li>
+        </ul>
+    </article>
+
+    <article class="bloque">
+        <h2>El impacto de los incendios en el Delta del Paraná</h2>
+        <p>
+            Entre 2020 y 2023, el Delta del Paraná atravesó uno de los procesos de degradación ambiental más graves de su historia reciente. Los incendios, en su enorme mayoría provocados por la acción humana —principalmente asociados a la quema intencional para la expansión ganadera, la limpieza de terrenos y prácticas productivas no reguladas—, afectaron cientos de miles de hectáreas de humedales en las provincias de Entre Ríos, Santa Fe y Buenos Aires.
+            <br>
+            El Delta del Paraná es un ecosistema de humedales dinámicos, donde el fuego no forma parte del ciclo natural. A diferencia de otros biomas, la vegetación del Delta no está adaptada a incendios recurrentes, por lo que el impacto es profundo y persistente. Las quemas destruyeron grandes extensiones de pastizales, juncales y bosques ribereños, afectando directamente la capacidad del ecosistema para regular inundaciones, filtrar contaminantes, almacenar carbono y sostener su biodiversidad.
+            <br>
+            Las consecuencias fueron múltiples. Miles de animales murieron o fueron desplazados: aves, reptiles, anfibios y pequeños mamíferos perdieron refugio y alimento. La quema de la cobertura vegetal dejó los suelos expuestos, acelerando procesos de erosión y compactación, lo que dificulta la regeneración natural. Además, la pérdida de materia orgánica redujo la capacidad del suelo para retener agua, alterando el funcionamiento hidrológico del humedal.
+            <br>
+            A nivel humano, los incendios generaron un fuerte impacto en la salud de las poblaciones cercanas. Las ciudades ribereñas, especialmente Rosario y localidades del sur santafesino y el norte bonaerense, estuvieron expuestas durante semanas a densas columnas de humo, con aumentos comprobados de afecciones respiratorias, irritaciones oculares y problemas cardiovasculares. El humo del Delta se convirtió en un símbolo visible de la crisis ambiental.
+            <br>
+            Otro efecto crítico fue la liberación masiva de carbono almacenado en los suelos y la vegetación. Los humedales del Delta son grandes sumideros de carbono; al incendiarse, pasan de ser aliados frente al cambio climático a convertirse en fuentes de gases de efecto invernadero, agravando la crisis climática global.
+            <br>
+            Si bien el ecosistema tiene cierta capacidad de regeneración natural, la repetición de incendios año tras año supera sus límites de resiliencia. En muchas áreas, la recuperación espontánea es lenta o incompleta, y se favorece la aparición de especies invasoras que alteran aún más el equilibrio ecológico.
+            <br>
+            Frente a este escenario, la restauración activa se vuelve indispensable. No se trata solo de “volver a plantar”, sino de acompañar los procesos naturales, recuperar la estructura del suelo, reintroducir especies nativas clave y monitorear la evolución del ecosistema en el tiempo. La protección del Delta del Paraná es una responsabilidad colectiva: conservarlo es preservar servicios ecosistémicos esenciales, la biodiversidad y la calidad de vida de millones de personas.
+        </p>
+    </article>
+    
+    <article class="bloque" id="galeria">
+        <h2>Galería</h2>
+        <div class="galeria">
+          <button type="button" data-full="../../img/delta/1.jpg" aria-label="Abrir imagen 1">
+          <img src="../../img/delta/1.jpg" alt="Delta del Paraná · Imagen 1">
+        </button>
+        
+        <button type="button" data-full="../../img/delta/2.jpg" aria-label="Abrir imagen 2">
+          <img src="../../img/delta/2.jpg" alt="Delta del Paraná · Imagen 2">
+        </button>
+        
+        <button type="button" data-full="../../img/delta/3.jpg" aria-label="Abrir imagen 3">
+          <img src="../../img/delta/3.jpg" alt="Delta del Paraná · Imagen 3">
+        </button>
+        
+        <button type="button" data-full="../../img/delta/4.jpg" aria-label="Abrir imagen 4">
+          <img src="../../img/delta/4.jpg" alt="Delta del Paraná · Imagen 4">
+        </button>
+      </div>
+      <p>Pulsa una imagen para verla ampliada</p>
+      
+    </article>
+
+  </section>
+
+  <div id="lightbox">
+    <button data-close="true">✕</button>
+    <button id="lightboxPrev" class="lightbox-arrow">❮</button>
+    <img id="lightboxImg">
+    <button id="lightboxNext" class="lightbox-arrow">❯</button>
+  </div>
+
+</main>
+
+
+<footer>
+    <img src="../../img/logo-blanco.png" alt="" id="logo-foot">
+
+    <div id="div-redes">
+        <a href="" class="redes"><img src="../../img/instagram.png" alt=""></a>
+        <a href="" class="redes"><img src="../../img/x.png" alt=""></a>
+        <a href="" class="redes"><img src="../../img/youtube.png" alt=""></a>
+        <a href="" class="redes"><img src="../../img/linkedin.png" alt=""></a>
+    </div>
+
+    <div>
+        <p>
+            © 2024 Renacer. Todos los derechos reservados.
+            <br>
+            Trabajo realizado por Thomas Zyska (1226459) - UADE - Desarrollo Web
+            <br>
+            Profesor: Bellanti Emanuel
+        </p>
+    </div>
+            <div class="idioma-switch" aria-label="Idioma">
+            <button type="button" class="idioma-btn" data-lang="es" aria-pressed="true">🇦🇷 🇪🇸</button>
+            <button type="button" class="idioma-btn" data-lang="en" aria-pressed="false">🇬🇧</button>
+        </div>
+
+</footer>
+
+<script src="../../scripts/dona.js"></script>
+<script src="../../scripts/proyectos.js"></script>
+  <script src="../../scripts/proyectos_i18n_pages.js"></script>
+    <script src="../../scripts/script.js"></script>
+</body>
+</html>

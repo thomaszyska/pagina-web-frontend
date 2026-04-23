@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Página de ONG Renacer, compromiso ambiental y restauración ecológica en Argentina.">
+    <meta name="keywords" content="HTML, CSS, JavaScript">
+    <meta name="author" content="Thomas Zyska">
+    <link rel="icon" type="image/x-icon" href="../img/favicon-16x16.png">
+    <title data-i18n="titleContacto">Contacto - Renacer</title>
+    <link rel="stylesheet" href="../styles/index.css">
+    <link rel="stylesheet" href="../styles/contacto.css">
+</head>
+
+
+<body>
+    
+<header>
+    <picture>
+        <a href="../home.html">
+            <source media="(min-width: 678px)" srcset="/img/logo.png">
+            <img src="../img/logo.png" alt="" id="logo">
+        </a>
+    </picture>
+    <a href="../home.html" id="nombre">renacer</a>
+    <button aria-controls="menu-principal" aria-expanded="false" aria-label="Abrir menú" class="hamburguesa" type="button"><span></span><span></span><span></span></button>
+
+    <nav id="menu-principal">
+        <button class="menu-cerrar" type="button" aria-label="Cerrar menú">
+            ✕
+        </button>
+    <a data-i18n="navNosotros" href="./nosotros.html">NOSOTROS</a>
+    <a data-i18n="navProyectos" href="./proyectos.html">PROYECTOS</a>
+    <a data-i18n="navMapa" href="./mapa.html">MAPA</a>
+    <a data-i18n="navContacto" href="./contacto.html">CONTACTO</a>
+    <a class="boton" data-i18n="navDona" href="./dona.html">DONÁ</a>
+    </nav>
+</header>
+
+<div class="menu-overlay" data-menu-overlay></div>
+
+<main>
+
+<section class="contacto-hero">
+        <h1 data-i18n="heroTitulo">Contacto</h1>
+        <p data-i18n="heroTexto">
+            ¿Querés sumarte como voluntario, proponer un proyecto o hacer una consulta?
+            Escribinos y te respondemos lo antes posible.
+        </p>
+</section>
+
+    <section class="contacto-grid">
+
+        <aside class="contacto-info">
+            <h2 data-i18n="asideTitulo">¡Hablemos!</h2>
+
+            <div class="info-item">
+                <h3 data-i18n="asideEmail">Email</h3>
+                <p><a href="mailto:contacto@renacer.org">contacto@renacer.org</a></p>
+            </div>
+
+            <div class="info-item">
+                <h3 data-i18n="asideTelefono">Teléfono</h3>
+                <p><a href="tel:+5491112345678">+54 9 11 1234-5678</a></p>
+                <p><a href="tel:+5491112345678">+54 9 15 3943-2913</a></p>
+            </div>
+
+            <div class="info-item">
+                <h3 data-i18n="asideUbicacion">Ubicación</h3>
+                <p>
+                    Av. Hipolito Yrigoyen 2931
+                    <br>
+                    <span data-i18n="asideCiudad">Buenos Aires, Argentina</span>
+                
+                </p>
+            </div>
+
+            <div class="info-item">
+                <h3 data-i18n="asideRedes">Redes</h3>
+                <div class="redes" id="redes-movil">
+                    <a href="#" aria-label="Instagram"> <img src="../img/instagram.png" alt=""></a>
+                    <a href="#" aria-label="X"><img src="../img/x.png" alt=""></a>
+                    <a href="#" aria-label="LinkedIn"> <img src="../img/linkedin.png" alt=""></a>
+                    <a href="#" aria-label="YouTube"> <img src="../img/youtube.png" alt=""></a>
+                </div>
+            </div>
+
+            <div class="info-item">
+                <h3 data-i18n="asideHorarios">Horarios</h3>
+                <p data-i18n="asideHorarioTexto">Lunes a viernes: 9:00 a 18:00</p>
+            </div>
+        </aside>
+
+        <section class="contacto-formulario">
+            <h2 data-i18n="formTitulo">Enviá tu mensaje</h2>
+
+            <form action="#" method="post" class="form">
+                <div class="fila">
+                    <div class="campo">
+                        <label for="nombre-contacto" data-i18n="lblNombre">Nombre</label>
+                        <input type="text" id="nombre-contacto" name="nombre" placeholder="Tu nombre" data-i18n-placeholder="phNombre" required>
+                        <small class="error" aria-live="polite"></small>
+                    </div>
+
+                    <div class="campo">
+                        <label for="apellido" data-i18n="lblApellido">Apellido</label>
+                        <input type="text" id="apellido" name="apellido" placeholder="Tu apellido" data-i18n-placeholder="phApellido" required>
+                        <small class="error" aria-live="polite"></small>
+                    </div>
+                </div>
+
+                <div class="fila">
+                    <div class="campo">
+                        <label for="email" data-i18n="lblEmail">Email</label>
+                        <input type="email" id="email" name="email" placeholder="tu@mail.com" data-i18n-placeholder="phEmail" required>
+                        <small class="error" aria-live="polite"></small>
+                    </div>
+
+                    <div class="campo">
+                        <label for="motivo" data-i18n="lblMotivo">Motivo</label>
+                        <select id="motivo" name="motivo" required>
+                            <option value="" selected disabled data-i18n="optElegi">Elegí una opción</option>
+                            <option value="voluntariado" data-i18n="optVoluntariado">Voluntariado</option>
+                            <option value="donaciones" data-i18n="optDonaciones">Donaciones</option>
+                            <option value="alianzas" data-i18n="optAlianzas">Alianzas / Prensa</option>
+                            <option value="proyectos" data-i18n="optProyectos">Proponer un proyecto</option>
+                            <option value="otro" data-i18n="optOtro">Otro</option>
+                        </select>
+                        <small class="error" aria-live="polite"></small>
+                    </div>
+                </div>
+
+                <div class="campo">
+                    <label for="mensaje" data-i18n="lblMensaje">Mensaje</label>
+                    <textarea id="mensaje" name="mensaje" rows="6" placeholder="Contanos en qué podemos ayudarte..." data-i18n-placeholder="phMensaje" required></textarea>
+                    <small class="error" aria-live="polite"></small>
+                </div>
+
+                <div class="checks">
+                    <label class="check">
+                        <input type="checkbox" required>
+                        <span data-i18n="chkTexto">Acepto que me contacten para responder esta consulta.</span>
+                    </label>
+                    <small class="error" aria-live="polite"></small>
+                </div>
+
+                <button type="submit" class="btn-enviar" data-i18n="btnEnviar">Enviar</button>
+                <p class="nota"><span data-i18n="nota">También podés escribirnos directo a</span> <strong>contacto@renacer.org</strong></p>
+            </form>
+        </section>
+
+    </section>
+
+    <section class="contacto-mapa">
+        <h2 data-i18n="mapaTitulo">Encontranos</h2>
+        <div class="mapa-embed">
+            <iframe
+                title="Mapa Renacer"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d335.32763458247223!2d-58.41374616368331!3d-34.612464637308705!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bccaf69247ef3d%3A0xb0c2150d67eb6fab!2sAv.%20Hip%C3%B3lito%20Yrigoyen%202931%2C%20C1208ABA%20Cdad.%20Aut%C3%B3noma%20de%20Buenos%20Aires!5e0!3m2!1ses!2sar!4v1766005606738!5m2!1ses!2sar"
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
+        </div>
+    </section>
+
+
+
+
+</main>
+
+
+
+
+
+
+<footer>
+<img src="../img/logo-blanco.png" alt="" id="logo-foot">
+
+<div id="div-redes">
+    <a href="" class="redes"><img src="../img/instagram.png" alt=""></a>
+    <a href="" class="redes"><img src="../img/x.png" alt=""></a>
+    <a href="" class="redes"><img src="../img/youtube.png" alt=""></a>
+    <a href="" class="redes"><img src="../img/linkedin.png" alt=""></a>
+</div>
+
+<div>
+    <p>
+        <span data-i18n="footerLinea1">© 2024 Renacer. Todos los derechos reservados.</span>
+        <br>
+        <span data-i18n="footerLinea2">Trabajo realizado por Thomas Zyska (1226459) - UADE - Desarrollo Web</span>
+        <br>
+        <span data-i18n="footerLinea3">Profesor: Bellanti Emanuel</span>
+    </p>
+</div>
+        <div class="idioma-switch" aria-label="Idioma">
+            <button type="button" class="idioma-btn" data-lang="es" aria-pressed="true">🇦🇷 🇪🇸</button>
+            <button type="button" class="idioma-btn" data-lang="en" aria-pressed="false">🇬🇧</button>
+        </div>
+
+</footer>
+
+<script src="../scripts/script.js"></script>
+</body>
+
+
+</html>

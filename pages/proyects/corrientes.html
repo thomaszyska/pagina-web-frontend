@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Proyecto de restauración ecológica en Corrientes: humedales, bosques ribereños y corredores biológicos. ONG Renacer.">
+    <meta name="author" content="Thomas Zyska">
+    <link rel="icon" type="image/x-icon" href="../../../img/favicon-16x16.png">
+    <title>Corrientes - Renacer</title>
+
+    <link rel="stylesheet" href="../../styles/index.css">
+    <link rel="stylesheet" href="../../styles/proyectos.css">
+</head>
+
+<body data-proyecto="corrientes">
+
+<header>
+    <picture>
+        <a href="../../home.html">
+            <source media="(min-width: 678px)" srcset="../../img/logo.png">
+            <img src="../../img/logo.png" alt="" id="logo">
+        </a>
+    </picture>
+    <a href="../../home.html" id="nombre">renacer</a>
+    <button aria-controls="menu-principal" aria-expanded="false" aria-label="Abrir menú" class="hamburguesa" type="button"><span></span><span></span><span></span></button>
+
+    <nav id="menu-principal">
+        <button class="menu-cerrar" type="button" aria-label="Cerrar menú">
+            ✕
+        </button>
+    <a data-i18n="navNosotros" href="../nosotros.html">NOSOTROS</a>
+    <a data-i18n="navProyectos" href="../proyectos.html">PROYECTOS</a>
+    <a data-i18n="navMapa" href="../mapa.html">MAPA</a>
+    <a data-i18n="navContacto" href="../contacto.html">CONTACTO</a>
+    <a class="boton" data-i18n="navDona" href="../dona.html">DONÁ</a>
+    </nav>
+</header>
+
+<div class="menu-overlay" data-menu-overlay></div>
+
+<main>
+
+  <section class="proy-hero" aria-label="Proyecto Corrientes">
+    <div class="proy-hero__wrap">
+      <p class="proy-hero__tag">Humedales · Biodiversidad</p>
+            <br>
+      <picture>
+        <source media="(min-width: 678px)" srcset="../../img/corrientes-intro.jpg">
+        <img
+          src="../../img/corrientes-intro.jpg"
+          alt="Corrientes"
+          id="img-hero"
+        >
+      </picture>
+      <h1>Corrientes</h1>
+      <p class="proy-hero__bajada">
+        Restauramos humedales y ecosistemas asociados en Corrientes, fortaleciendo
+        corredores biológicos, recuperando cobertura vegetal nativa y mejorando la
+        resiliencia frente a sequías e incendios.
+      </p>
+
+      <div class="proy-cta">
+        <a class="proy-btn" href="../dona.html">Donar a este proyecto</a>
+        <a class="proy-btn sec" href="#galeria">Ver galería</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="proy-wrap">
+
+    <article class="bloque" aria-label="Acumulador del proyecto">
+      <div class="acum-head">
+        <div class="acum-txt">
+          <h2>Acumulado del proyecto</h2>
+        </div>
+
+        <span class="proy-hero__tag">Corrientes</span>
+      </div>
+
+      <div class="acum-numeros" id="acumCard" data-proyecto="corrientes">
+        <div class="acum-item">
+          <div class="k">Acumulado</div>
+          <div class="v" id="acumValor">$ 0</div>
+        </div>
+
+        <div class="acum-item">
+          <div class="k">Meta</div>
+          <div class="v" id="metaValor">$ 0</div>
+        </div>
+
+        <div class="acum-item">
+          <div class="k">Progreso</div>
+          <div class="v" id="pctValor">0%</div>
+        </div>
+
+        <div class="acum-item">
+          <div class="k">Estado</div>
+          <div class="v" id="estadoValor">En curso</div>
+        </div>
+      </div>
+
+      <div class="barra">
+        <div id="barraFill" style="width:0%;"></div>
+      </div>
+
+      <div class="acum-foot">
+        <p>Gracias por ayudar a proteger los humedales.</p>
+        <a class="proy-btn sec" href="../dona.html">Ir a Doná</a>
+      </div>
+    </article>
+
+    <article class="bloque">
+      <h2>El valor de los Esteros y los humedales</h2>
+      <p>
+        Corrientes alberga algunos de los humedales más importantes del país, como
+        el sistema de los Esteros del Iberá. Estos ambientes regulan el agua,
+        amortiguan inundaciones, recargan acuíferos y sostienen una biodiversidad
+        única. Son, además, una barrera natural frente a la erosión y un gran
+        reservorio de carbono.
+      </p>
+    </article>
+
+    <article class="bloque">
+      <h2>Qué hacemos en Renacer</h2>
+      <p>
+        Trabajamos con restauración ecológica aplicada y fortalecimiento de
+        conectividad: reforestación con especies nativas en áreas priorizadas,
+        recuperación de bordes de cursos de agua, creación de “islas” de
+        vegetación y monitoreo para asegurar la supervivencia.
+      </p>
+      <ul class="proy-puntos">
+        <li>Reforestación y enriquecimiento con nativas.</li>
+        <li>Corredores biológicos y conectividad del hábitat.</li>
+        <li>Monitoreo, mantenimiento y control de invasoras.</li>
+      </ul>
+    </article>
+
+    <article class="bloque">
+      <h2>El impacto de los incendios y la sequía en Corrientes</h2>
+      <p>
+        Corrientes atravesó en los últimos años una combinación crítica de sequía
+        prolongada, olas de calor y condiciones extremas que incrementaron
+        drásticamente el riesgo de incendios. Cuando los humedales pierden agua y
+        bajan sus niveles, se reduce su capacidad de actuar como cortafuego
+        natural y se vuelven mucho más vulnerables: pastizales secos, vegetación
+        estresada y vientos constantes crean un escenario propicio para que
+        pequeños focos se transformen en incendios de gran escala.
+        <br><br>
+        El fuego en ambientes de humedal no solo quema la vegetación superficial:
+        también puede afectar materia orgánica acumulada, alterar el equilibrio
+        del suelo y degradar microhábitats esenciales para aves, anfibios,
+        reptiles y mamíferos. La pérdida de cobertura vegetal deja sectores
+        expuestos a la erosión, disminuye la disponibilidad de refugio y afecta
+        la reproducción y alimentación de numerosas especies.
+        <br><br>
+        Además del daño directo a la biodiversidad, los incendios impactan en la
+        calidad del agua: cenizas y sedimentos pueden modificar la composición de
+        lagunas, esteros y cursos de agua, afectando la vida acuática y la cadena
+        alimentaria. Cuando la vegetación ribereña se pierde, los bordes de
+        arroyos y lagunas quedan más frágiles y se acelera el deterioro.
+        <br><br>
+        En este contexto, la restauración se vuelve fundamental para recuperar la
+        resiliencia del sistema. Reintroducir vegetación nativa en zonas
+        estratégicas, reforzar bordes de agua, recomponer corredores biológicos y
+        acompañar la regeneración natural ayuda a que el humedal recupere su
+        capacidad de regulación hídrica y su rol como refugio de biodiversidad.
+        Proteger Corrientes es cuidar el agua, el clima y un patrimonio natural
+        único del país.
+      </p>
+    </article>
+
+    <article class="bloque" id="galeria">
+      <h2>Galería</h2>
+
+      <div class="galeria">
+        <button type="button" data-full="../../img/corrientes/1.jpg">
+          <img src="../../img/corrientes/1.jpg" alt="Corrientes · Imagen 1">
+        </button>
+
+        <button type="button" data-full="../../img/corrientes/2.jpg">
+          <img src="../../img/corrientes/2.jpg" alt="Esteros del Iberá · Imagen 2">
+        </button>
+
+        <button type="button" data-full="../../img/corrientes/3.jpg">
+          <img src="../../img/corrientes/3.jpg" alt="Humedales y biodiversidad · Imagen 3">
+        </button>
+
+        <button type="button" data-full="../../img/corrientes/4.jpg">
+          <img src="../../img/corrientes/4.jpg" alt="Restauración ecológica · Imagen 4">
+        </button>
+      </div>
+      <p>Pulsa una imagen para verla ampliada</p>
+    </article>
+
+  </section>
+
+  <div id="lightbox">
+    <button data-close="true">✕</button>
+    <button id="lightboxPrev" class="lightbox-arrow">❮</button>
+    <img id="lightboxImg">
+    <button id="lightboxNext" class="lightbox-arrow">❯</button>
+  </div>
+
+</main>
+
+<footer>
+    <img src="../../img/logo-blanco.png" alt="" id="logo-foot">
+
+    <div id="div-redes">
+        <a href="" class="redes"><img src="../../img/instagram.png" alt=""></a>
+        <a href="" class="redes"><img src="../../img/x.png" alt=""></a>
+        <a href="" class="redes"><img src="../../img/youtube.png" alt=""></a>
+        <a href="" class="redes"><img src="../../img/linkedin.png" alt=""></a>
+    </div>
+
+    <div>
+        <p>
+            © 2024 Renacer. Todos los derechos reservados.
+            <br>
+            Trabajo realizado por Thomas Zyska (1226459) - UADE - Desarrollo Web
+        </p>
+    </div>
+            <div class="idioma-switch" aria-label="Idioma">
+            <button type="button" class="idioma-btn" data-lang="es" aria-pressed="true">🇦🇷 🇪🇸</button>
+            <button type="button" class="idioma-btn" data-lang="en" aria-pressed="false">🇬🇧</button>
+        </div>
+</footer>
+
+<script src="../../scripts/dona.js"></script>
+<script src="../../scripts/proyectos.js"></script>
+  <script src="../../scripts/proyectos_i18n_fixed.js"></script>
+    <script src="../../scripts/script.js"></script>
+</body>
+</html>

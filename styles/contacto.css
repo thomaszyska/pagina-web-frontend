@@ -1,0 +1,442 @@
+main{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 6vh;
+  padding: 6vh 0;
+}
+
+
+.contacto-hero{
+  width: 70%;
+  margin: 0 auto;
+  text-align: center;
+  background-color: #F8F8F8;
+  border-radius: 1.5vh;
+  padding: 5vh 6%;
+  box-shadow: 0 1vh 2vh rgba(0,0,0,0.2);
+}
+
+    .contacto-hero h1{
+        margin-top: 0;
+        padding-top: 0;
+        color: #286628;
+        font-size: 4vh;
+        margin-bottom: 2vh;
+        font-family: "National Park", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: 800;
+        font-style: normal;
+    }
+
+    .contacto-hero p{
+        width: 80%;
+        margin: 0 auto;
+        color: #286628;
+        font-size: 2.1vh;
+        line-height: 1.6;
+        font-family: "Poppins", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+    }
+
+.contacto-grid{
+    width: 80%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 35% 65%;
+    gap: 3%;
+    align-items: stretch;
+    font-family: "Poppins", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+}
+
+.contacto-info{
+  background-color: #F8F8F8;
+  border-radius: 1.5vh;
+  padding: 4vh 8%;
+  box-shadow: 0 1vh 2vh rgba(0,0,0,0.2);
+  color: #286628;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 2.5vh;
+}
+
+    .contacto-info h2, .contacto-mapa h2{
+        font-family: "National Park", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: 800;
+        font-style: normal;
+        font-size: 3vh;
+        margin-top: 0;
+        padding-top: 0;
+        text-align: center;
+    }
+
+    .info-item h3{
+    font-size: 2.2vh;
+    margin-bottom: 0.8vh;
+    font-weight: 600;
+    }
+
+    .info-item p{
+    font-size: 2vh;
+    line-height: 1.5;
+    }
+
+    .contacto-info a{
+    color: #286628;
+    text-decoration: none;
+    font-weight: 300;
+    }
+
+    .contacto-info a:hover{
+    text-decoration: underline;
+    }
+
+.redes{
+  display: flex;
+  flex-wrap: row;
+  gap: 1.5vh;
+}
+
+    .redes a{
+    color: #F8F8F8;
+    font-size: 1.9vh;
+    text-decoration: none;
+    transition: 0.25s ease;
+    flex-wrap: row;
+    }
+
+    .redes a img{
+        background-color: #286628;
+        padding: 0.8vh;
+        border-radius: 1vh;
+        width: 3vh;
+        height: 3vh;
+        vertical-align: middle;
+    }
+
+    .redes a:hover{
+    transform: translateY(-0.3vh);
+    box-shadow: 0 1vh 2vh rgba(0,0,0,0.2);
+    }
+
+.contacto-formulario{
+  width: 85%;
+  background-color: #F8F8F8;
+  border-radius: 1.5vh;
+  padding: 4vh 6%;
+  box-shadow: 0 1vh 2vh rgba(0,0,0,0.2);
+  color: #286628;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
+    .contacto-formulario h2{
+    font-family: "National Park", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 800;
+    font-style: normal;
+    padding-top: 1vh;
+    font-size: 3vh;
+    margin-bottom: 2.5vh;
+    text-align: center;
+    }
+
+
+    .contacto-formulario form #nombre{
+        width: 100%;
+        padding: 1.8vh 5%;
+        font-size: 2vh;
+        font-weight: 400;
+        color: #286628;
+        border-radius: 1vh;
+        border: 0.3vh solid rgba(40,102,40,0.4);
+        background-color: #fff;
+        line-height: normal;
+        text-decoration: none;
+        box-shadow: none;
+    }
+        .contacto-formulario form #nombre::placeholder{
+            font-size: 2vh;
+            color: rgba(40,102,40,0.55);
+        }
+
+.form{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 2.2vh;
+}
+
+.fila{
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 4%;
+}
+
+.campo{
+  width: 90%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 1vh;
+}
+
+    .campo label{
+    font-size: 2vh;
+    font-weight: 700;
+    }
+
+    .campo input,
+    .campo select,
+    .campo textarea{
+    width: 100%;
+    background-color: #FFFFFF;
+    border: 0.3vh solid rgba(40,102,40,0.35);
+    border-radius: 1vh;
+    padding: 1.8vh 5%;
+    color: #286628;
+    outline: none;
+    }
+
+    .campo textarea{
+    resize: vertical;
+    min-height: 18vh;
+    }
+
+    .campo input:focus,
+    .campo select:focus,
+    .campo textarea:focus{
+    border-color: #286628;
+    box-shadow: 0 0 0 0.4vh rgba(40,102,40,0.18);
+    }
+
+    .checks{
+    width: 100%;
+    }
+
+    .check{
+    display: flex;
+    align-items: center;
+    gap: 2%;
+    font-size: 1.9vh;
+    line-height: 1.4;
+    }
+
+    .check input{
+    width: 2.2vh;
+    height: 2.2vh;
+    accent-color: #286628;
+    }
+
+    .btn-enviar{
+    width: 40%;
+    margin: 1vh auto 0 auto;
+    padding: 1.8vh 0;
+    border: none;
+    border-radius: 1.2vh;
+    background-color: #286628;
+    color: #F8F8F8;
+    font-size: 2.2vh;
+    font-weight: 800;
+    cursor: pointer;
+    transition: 0.25s ease;
+    }
+
+        .btn-enviar:hover{
+        transform: translateY(-0.4vh);
+        box-shadow: 0 1vh 2vh rgba(0,0,0,0.25);
+        }
+
+    .nota{
+    margin-top: 1.8vh;
+    text-align: center;
+    font-size: 1.8vh;
+    }
+
+.contacto-mapa{
+  width: 70%;
+  margin: 0 auto;
+  background-color: #F8F8F8;
+  border-radius: 1.5vh;
+  padding: 4vh 6%;
+  box-shadow: 0 1vh 2vh rgba(0,0,0,0.2);
+  color: #286628;
+}
+
+.contacto-mapa h2{
+  text-align: center;
+  font-size: 3vh;
+  margin-bottom: 2.5vh;
+}
+
+.mapa-embed{
+  width: 100%;
+  border-radius: 1.5vh;
+  overflow: hidden;
+}
+
+.mapa-embed iframe{
+  width: 100%;
+  height: 45vh;
+  border: 0;
+}
+
+.contacto-formulario #nombre{
+  margin: 0;
+  margin-top: 0;
+  display: block;
+  line-height: normal;
+}
+
+.contacto-formulario #nombre{
+  padding: 1.8vh 5%;
+  font-size: 2vh;
+  height: auto;
+}
+
+.contacto-formulario{
+  justify-content: flex-start;
+}
+
+.contacto-info{
+  justify-content: flex-start;
+}
+
+@media (max-width: 768px){
+
+  main{
+    padding-bottom: 10vh;
+  }
+
+  .contacto-hero{
+    width: 84%;
+    padding: 4vh 6%;
+  }
+
+  .contacto-hero h1{
+    font-size: 3.2vh;
+  }
+
+  .contacto-hero p{
+    width: 95%;
+    font-size: 2vh;
+  }
+
+  .contacto-grid{
+    width: 92%;
+    grid-template-columns: 1fr;
+    gap: 4vh;
+  }
+
+  .contacto-info{
+    padding: 4vh 8%;
+    gap: 3vh;
+  }
+
+  .contacto-info h2{
+    font-size: 2.7vh;
+  }
+
+  .info-item h3{
+    font-size: 2.1vh;
+  }
+
+  .info-item p{
+    font-size: 1.9vh;
+  }
+
+  .redes{
+    justify-content: center;
+  }
+
+  #redes-movil{
+    margin-left: 9vh;
+  }
+  /* FORMULARIO */
+  .contacto-formulario{
+    width: 90%;
+    padding: 4vh 6%;
+  }
+
+  .contacto-formulario h2{
+    font-size: 2.7vh;
+  }
+
+  .fila{
+    grid-template-columns: 1fr;
+    gap: 2.5vh;
+  }
+
+  .campo{
+    width: 90%;
+  }
+
+  .campo label{
+    font-size: 2vh;
+  }
+
+  .campo input,
+  .campo select,
+  .campo textarea{
+    font-size: 2vh;
+    padding: 1.6vh 5%;
+  }
+
+  .campo textarea{
+    min-height: 16vh;
+  }
+
+  .check{
+    font-size: 1.8vh;
+    gap: 3%;
+  }
+
+  .btn-enviar{
+    width: 80%;
+    font-size: 2.2vh;
+    padding: 1.6vh 0;
+  }
+
+  .nota{
+    font-size: 1.7vh;
+  }
+
+  /* MAPA */
+  .contacto-mapa{
+    width: 85%;
+    padding: 4vh 6%;
+  }
+
+  .contacto-mapa h2{
+    font-size: 2.6vh;
+  }
+
+  .mapa-embed iframe{
+    height: 38vh;
+  }
+}
+
+@media (max-width: 420px){
+
+  .contacto-hero h1{
+    font-size: 3vh;
+  }
+
+  .btn-enviar{
+    width: 90%;
+  }
+
+  .mapa-embed iframe{
+    height: 34vh;
+  }
+}
+

@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Página de ONG Renacer, compromiso ambiental y restauración ecológica en Argentina.">
+    <meta name="keywords" content="HTML, CSS, JavaScript">
+    <meta name="author" content="Thomas Zyska">
+    <link rel="icon" type="image/x-icon" href="../img/favicon-16x16.png">
+    <title data-i18n="titleDona">Doná - Renacer</title>
+    <link rel="stylesheet" href="../styles/index.css">
+    <link rel="stylesheet" href="../styles/dona.css">
+</head>
+
+<body>
+<header>
+    <picture>
+        <a href="../home.html">
+            <source media="(min-width: 678px)" srcset="/img/logo.png">
+            <img src="../img/logo.png" alt="" id="logo">
+        </a>
+    </picture>
+    <a href="../home.html" id="nombre">renacer</a>
+    <button aria-controls="menu-principal" aria-expanded="false" aria-label="Abrir menú" class="hamburguesa" type="button"><span></span><span></span><span></span></button>
+
+    <nav id="menu-principal">
+        <button class="menu-cerrar" type="button" aria-label="Cerrar menú">
+            ✕
+        </button>
+    <a data-i18n="navNosotros" href="./nosotros.html">NOSOTROS</a>
+    <a data-i18n="navProyectos" href="./proyectos.html">PROYECTOS</a>
+    <a data-i18n="navMapa" href="./mapa.html">MAPA</a>
+    <a data-i18n="navContacto" href="./contacto.html">CONTACTO</a>
+    <a class="boton" data-i18n="navDona" href="./dona.html">DONÁ</a>
+    </nav>
+</header>
+
+<div class="menu-overlay" data-menu-overlay></div>
+
+<main>
+
+    <section class="dona-hero">
+        <h1 data-i18n-html="donaHeroH1"><span>Doná</span> a Renacer</h1>
+        <p data-i18n-html="donaHeroP">
+            Tu aporte se transforma en árboles, mantenimiento y recuperación de ecosistemas.
+            <br>
+            Elegí un proyecto, seleccioná el monto y completá los 3 pasos.
+            <br>
+            Luego le enviaremos un email a su correo con el comprobante de donación y los detalles de utilizacion de los fondos.
+        </p>
+    </section>
+
+    <section class="panel-proyectos">
+        <h2 data-i18n="donaAcumH2">Acumulado por proyecto</h2>
+        <p class="sub" data-i18n="donaAcumSub">Los fondos recaudados se destinan íntegramente a los proyectos seleccionados.</p>
+
+        <div class="grid-proyectos" id="gridProyectos">
+        </div>
+    </section>
+
+    <section class="wizard-wrap">
+        <div class="wizard-head">
+            <h2 id="wizardTitulo" data-i18n="donaWizardTitulo">Donación (3 pasos)</h2>
+
+            <div class="steps" aria-label="Progreso de donación">
+                <div class="step activo" data-step="1">
+                    <span class="n">1</span>
+                    <span class="t" data-i18n="donaStepInfo">Información</span>
+                </div>
+                <div class="line"></div>
+                <div class="step" data-step="2">
+                    <span class="n">2</span>
+                    <span class="t" data-i18n="donaStepPago">Pago</span>
+                </div>
+                <div class="line"></div>
+                <div class="step" data-step="3">
+                    <span class="n">3</span>
+                    <span class="t" data-i18n="donaStepConf">Confirmación</span>
+                </div>
+            </div>
+        </div>
+
+        <form class="wizard" id="formDona" novalidate>
+
+            <section class="paso activo" data-step="1">
+                <div class="bloque">
+                    <h3 data-i18n="donaP1H3">1) Elegí el proyecto</h3>
+                    <p class="mini" data-i18n="donaP1Mini">Seleccioná uno de los paneles de arriba (o elegilo acá).</p>
+
+                    <div class="select-row">
+                        <label class="label" for="proyectoSelect" data-i18n="donaProyectoLbl">Proyecto</label>
+                        <select id="proyectoSelect" name="proyecto" required>
+                            <option value="" selected disabled data-i18n="donaProyectoOpt">Elegí un proyecto…</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="bloque">
+                    <h3 data-i18n="donaP2H3">2) ¿Cuánto querés donar?</h3>
+                    <p class="mini" data-i18n="donaP2Mini">Usamos pesos argentinos (ARS).</p>
+
+                    <div class="monto-grid" role="group" aria-label="Seleccionar monto">
+                        <button type="button" class="monto" data-monto="2500">$ 2.500</button>
+                        <button type="button" class="monto" data-monto="5000">$ 5.000</button>
+                        <button type="button" class="monto" data-monto="10000">$ 10.000</button>
+                        <button type="button" class="monto" data-monto="20000">$ 20.000</button>
+                        <button type="button" class="monto" data-monto="50000">$ 50.000</button>
+                        <button type="button" class="monto" data-monto="100000">$ 100.000</button>
+                    </div>
+
+                    <div class="select-row">
+                        <label class="label" for="montoOtro" data-i18n="donaOtroMontoLbl">Otro monto</label>
+                        <input id="montoOtro" name="montoOtro" inputmode="numeric" placeholder="Ej: 7500" data-i18n-placeholder="donaOtroMontoPh" />
+                    </div>
+
+                    <input type="hidden" id="montoFinal" name="montoFinal" required>
+                </div>
+
+                <div class="bloque">
+                    <h3 data-i18n="donaP3H3">3) Datos del donante</h3>
+                    <div class="cols">
+                        <div class="select-row">
+                            <label class="label" for="nombreDonante" data-i18n="donaNombreLbl">Nombre completo</label>
+                            <input id="nombreDonante" name="nombre" placeholder="Nombre y apellido" data-i18n-placeholder="donaNombrePh" required>
+                        </div>
+
+                        <div class="select-row">
+                            <label class="label" for="fechaNacimiento" data-i18n="donaFechaLbl">Fecha de nacimiento</label>
+                            <input id="fechaNacimiento" name="fechaNacimiento" type="date" required>
+                        </div>
+                    </div>
+
+                    <div class="cols">
+                        <div class="select-row">
+                            <label class="label" for="residencia" data-i18n="donaResidLbl">Lugar de residencia</label>
+                            <input id="residencia" name="residencia" placeholder="Ej: Palermo, CABA" data-i18n-placeholder="donaResidPh" required>
+                        </div>
+
+                        <div class="select-row">
+                            <label class="label" for="emailDonante" data-i18n="donaEmailLbl">Email</label>
+                            <input id="emailDonante" name="email" type="email" placeholder="tu@mail.com" data-i18n-placeholder="donaEmailPh" required>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="acciones">
+                    <div class="error" id="errorPaso1" aria-live="polite"></div>
+                    <button type="button" class="btn" id="btnSiguiente1" data-i18n="donaBtnContinuar">Continuar</button>
+                </div>
+            </section>
+
+            <section class="paso" data-step="2">
+                <div class="bloque">
+                    <h3 data-i18n="donaPagoH3">Información de pago</h3>
+                    <p class="mini" data-i18n="donaPagoMini">Validación de formato (demo). No se envía nada: es solo frontend.</p>
+
+                    <div class="select-row">
+                        <label class="label" for="metodoPago" data-i18n="donaMetodoLbl">Método</label>
+                        <select id="metodoPago" name="metodoPago" required>
+                            <option value="" selected disabled data-i18n="donaMetodoOpt">Seleccioná un método…</option>
+                            <option value="tc" data-i18n="donaMetodoTc">Tarjeta</option>
+                            <option value="transf" data-i18n="donaMetodoTransf">Transferencia</option>
+                        </select>
+                    </div>
+
+                    <div class="pago-panel" id="panelTarjeta" hidden>
+                        <div class="cols">
+                            <div class="select-row" id="tarjeta-movil">
+                                <label class="label" for="numeroTarjeta" data-i18n="donaNumTarjetaLbl">Número de tarjeta</label>
+                                <input id="numeroTarjeta" name="numeroTarjeta" inputmode="numeric" placeholder="16 dígitos" data-i18n-placeholder="donaNumTarjetaPh" autocomplete="cc-number">
+                            </div>
+
+                            <div class="select-row" id="tarjeta-movil">
+                                <label class="label" for="nombreTarjeta" data-i18n="donaNombreTarjetaLbl">Nombre en la tarjeta</label>
+                                <input id="nombreTarjeta" name="nombreTarjeta" placeholder="Como figura en la tarjeta" data-i18n-placeholder="donaNombreTarjetaPh" autocomplete="cc-name">
+                            </div>
+                        </div>
+
+                        <div class="cols">
+                            <div class="select-row" id="tarjeta-movil">
+                                <label class="label" for="vencimiento" data-i18n="donaVencLbl">Vencimiento</label>
+                                <input id="vencimiento" name="vencimiento" inputmode="numeric" placeholder="MM/AA" data-i18n-placeholder="donaVencPh" autocomplete="cc-exp">
+                            </div>
+
+                            <div class="select-row" id="tarjeta-movil">
+                                <label class="label" for="cvv" data-i18n="donaCvvLbl">Código de seguridad</label>
+                                <input id="cvv" name="cvv" inputmode="numeric" placeholder="3 dígitos" data-i18n-placeholder="donaCvvPh" autocomplete="cc-csc">
+                            </div>
+                        </div>
+
+                        <p class="mini" data-i18n-html="donaDemoTarjeta">
+                        Demo: si completás <strong>todo con ceros</strong> (0000… en tarjeta, 00/00, 000) deja pasar.
+                        </p>
+
+                    </div>
+
+                    <div class="pago-panel" id="panelTransf" hidden>
+                        <div class="nota">
+                            <p data-i18n="donaTransfP">Transferí al siguiente CBU (generado para demo):</p>
+                            <div class="cbu-box">
+                                <div class="cbu-item"><strong>CBU:</strong> <span id="cbuValor">—</span></div>
+                                <div class="cbu-item"><strong>Alias:</strong> <span id="aliasValor">renacer.dona</span></div>
+                            </div>
+                            <label class="check">
+                                <input type="checkbox" id="checkTransfer" />
+                                <span data-i18n="donaTransfCheck">Ya realicé la transferencia (demo)</span>
+                            </label>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="acciones">
+                    <div class="error" id="errorPaso2" aria-live="polite"></div>
+                    <button type="button" class="btn secundario" id="btnAtras2" data-i18n="donaBtnAtras">Atrás</button>
+                    <button type="button" class="btn" id="btnSiguiente2" data-i18n="donaBtnRevisar">Revisar</button>
+                </div>
+            </section>
+
+            <section class="paso" data-step="3">
+                <div class="bloque">
+                    <h3 data-i18n="donaConfH3">Confirmación</h3>
+                    <p class="mini" data-i18n="donaConfMini">Revisá el resumen. El botón final es “simulado”.</p>
+
+                    <div class="resumen" id="resumenFinal"></div>
+                </div>
+
+                <div class="acciones">
+                    <button type="button" class="btn secundario" id="btnAtras3" data-i18n="donaBtnAtras">Atrás</button>
+                    <button type="submit" class="btn" id="btnConfirmar" data-i18n="donaBtnConfirmar">Confirmar donación</button>
+                </div>
+
+                <div class="ok" id="okMsg" aria-live="polite"></div>
+            </section>
+
+        </form>
+    </section>
+
+</main>
+
+<footer>
+    <img src="../img/logo-blanco.png" alt="" id="logo-foot">
+
+    <div id="div-redes">
+        <a href="" class="redes"><img src="../img/instagram.png" alt=""></a>
+        <a href="" class="redes"><img src="../img/x.png" alt=""></a>
+        <a href="" class="redes"><img src="../img/youtube.png" alt=""></a>
+        <a href="" class="redes"><img src="../img/linkedin.png" alt=""></a>
+    </div>
+
+    <div>
+        <p data-i18n-html="footerHtml">
+            © 2024 Renacer. Todos los derechos reservados.
+            <br>
+            Trabajo realizado por Thomas Zyska (1226459) - UADE - Desarrollo Web
+            <br>
+            Profesor: Bellanti Emanuel
+        </p>
+    </div>
+                <div class="idioma-switch" aria-label="Idioma">
+            <button type="button" class="idioma-btn" data-lang="es" aria-pressed="true">🇦🇷 🇪🇸</button>
+            <button type="button" class="idioma-btn" data-lang="en" aria-pressed="false">🇬🇧</button>
+        </div>
+</footer>
+
+<script src="../scripts/script.js"></script>
+<script src="../scripts/dona.js"></script>
+</body>
+</html>
+

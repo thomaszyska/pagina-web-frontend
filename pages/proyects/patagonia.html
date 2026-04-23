@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Proyecto de restauración de bosques andino-patagónicos afectados por incendios. ONG Renacer.">
+    <meta name="author" content="Thomas Zyska">
+    <link rel="icon" type="image/x-icon" href="../../../img/favicon-16x16.png">
+    <title>Patagonia - Renacer</title>
+
+    <link rel="stylesheet" href="../../styles/index.css">
+    <link rel="stylesheet" href="../../styles/proyectos.css">
+</head>
+
+<body>
+
+<header>
+    <picture>
+        <a href="../../home.html">
+            <source media="(min-width: 678px)" srcset="../../img/logo.png">
+            <img src="../../img/logo.png" alt="" id="logo">
+        </a>
+    </picture>
+    <a href="../../home.html" id="nombre">renacer</a>
+    <button aria-controls="menu-principal" aria-expanded="false" aria-label="Abrir menú" class="hamburguesa" type="button"><span></span><span></span><span></span></button>
+
+    <nav id="menu-principal">
+        <button class="menu-cerrar" type="button" aria-label="Cerrar menú">
+            ✕
+        </button>
+    <a data-i18n="navNosotros" href="../nosotros.html">NOSOTROS</a>
+    <a data-i18n="navProyectos" href="../proyectos.html">PROYECTOS</a>
+    <a data-i18n="navMapa" href="../mapa.html">MAPA</a>
+    <a data-i18n="navContacto" href="../contacto.html">CONTACTO</a>
+    <a class="boton" data-i18n="navDona" href="../dona.html">DONÁ</a>
+    </nav>
+</header>
+
+<div class="menu-overlay" data-menu-overlay></div>
+
+<main>
+
+  <section class="proy-hero" aria-label="Proyecto Patagonia">
+    <div class="proy-hero__wrap">
+      <p class="proy-hero__tag">Bosque andino · Incendios</p>
+      <br>
+      <picture>
+        <source media="(min-width: 678px)" srcset="../../img/patagonia/patagonia-hero.jpg">
+        <img
+          src="../../img/patagonia/patagonia-hero.jpg"
+          alt="Patagonia"
+          id="img-hero"
+        >
+      </picture>
+      <h1>Patagonia</h1>
+      <p class="proy-hero__bajada">
+        Restauramos bosques andino-patagónicos afectados por incendios de gran
+        magnitud, recuperando suelos, reintroduciendo especies nativas y
+        acompañando la regeneración natural.
+      </p>
+
+      <div class="proy-cta">
+        <a class="proy-btn" href="../dona.html">Donar a este proyecto</a>
+        <a class="proy-btn sec" href="#galeria">Ver galería</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="proy-wrap">
+
+    <article class="bloque" aria-label="Acumulador del proyecto">
+      <div class="acum-head">
+        <div class="acum-txt">
+          <h2>Acumulado del proyecto</h2>
+        </div>
+
+        <span class="proy-hero__tag">Patagonia</span>
+      </div>
+
+      <div class="acum-numeros" id="acumCard" data-proyecto="patagonia">
+        <div class="acum-item">
+          <div class="k">Acumulado</div>
+          <div class="v" id="acumValor">$ 0</div>
+        </div>
+
+        <div class="acum-item">
+          <div class="k">Meta</div>
+          <div class="v" id="metaValor">$ 0</div>
+        </div>
+
+        <div class="acum-item">
+          <div class="k">Progreso</div>
+          <div class="v" id="pctValor">0%</div>
+        </div>
+
+        <div class="acum-item">
+          <div class="k">Estado</div>
+          <div class="v" id="estadoValor">En curso</div>
+        </div>
+      </div>
+
+      <div class="barra">
+        <div id="barraFill" style="width:0%;"></div>
+      </div>
+
+      <div class="acum-foot">
+        <p>Gracias por ayudar a restaurar los bosques patagónicos.</p>
+        <a class="proy-btn sec" href="../dona.html">Ir a Doná</a>
+      </div>
+    </article>
+
+    <article class="bloque">
+      <h2>El valor del bosque andino-patagónico</h2>
+      <p>
+        Los bosques andino-patagónicos cumplen un rol clave en la regulación
+        climática, la protección de cuencas hídricas y la conservación de la
+        biodiversidad. Son ecosistemas frágiles, de crecimiento lento, donde la
+        recuperación natural puede llevar décadas.
+      </p>
+    </article>
+
+    <article class="bloque">
+      <h2>Qué hacemos en Renacer</h2>
+      <p>
+        Trabajamos en restauración ecológica post-incendio mediante la protección
+        del suelo, la reintroducción de especies nativas, el control de procesos
+        erosivos y el monitoreo de la regeneración natural a largo plazo.
+      </p>
+      <ul class="proy-puntos">
+        <li>Reforestación con especies nativas patagónicas.</li>
+        <li>Protección de suelos y cuencas hídricas.</li>
+        <li>Seguimiento de la recuperación ecológica.</li>
+      </ul>
+    </article>
+
+    <article class="bloque">
+      <h2>El impacto de los incendios en la Patagonia</h2>
+      <p>
+        Durante los últimos años, la Patagonia argentina —especialmente las
+        provincias de Neuquén, Río Negro y Chubut— fue escenario de incendios
+        forestales de una magnitud inédita. Las condiciones climáticas extremas,
+        con sequías prolongadas, altas temperaturas y fuertes vientos, sumadas a
+        la acción humana, generaron escenarios de altísimo riesgo.
+        <br><br>
+        En zonas como el Parque Nacional Nahuel Huapi, El Bolsón, Lago Puelo y áreas
+        rurales de Neuquén y Chubut, el fuego arrasó miles de hectáreas de bosques
+        nativos, afectando lengas, coihues, cipreses y otras especies de crecimiento
+        lento. La pérdida de cobertura vegetal dejó suelos expuestos a la erosión,
+        incrementando el riesgo de deslizamientos y pérdida de fertilidad.
+        <br><br>
+        La fauna silvestre se vio gravemente afectada: aves, mamíferos, reptiles y
+        polinizadores perdieron hábitat y alimento. En muchos casos, la mortandad
+        fue inmediata; en otros, el impacto se manifiesta a largo plazo por la
+        fragmentación del ecosistema y la escasez de recursos.
+        <br><br>
+        Otro efecto crítico fue la liberación de grandes cantidades de carbono
+        almacenado en la biomasa y el suelo. Los bosques patagónicos, que actúan
+        como sumideros de carbono, pasaron a convertirse en emisores, profundizando
+        el impacto del cambio climático.
+        <br><br>
+        Dado que estos ecosistemas no están adaptados a incendios frecuentes, la
+        regeneración natural es lenta y, en muchos casos, insuficiente. La
+        restauración activa se vuelve fundamental para acompañar los procesos
+        naturales, evitar la degradación permanente y reducir la vulnerabilidad
+        frente a futuros incendios. Restaurar la Patagonia es proteger el agua,
+        el clima y la biodiversidad para las próximas generaciones.
+      </p>
+    </article>
+
+    <article class="bloque" id="galeria">
+      <h2>Galería</h2>
+
+      <div class="galeria">
+        <button type="button" data-full="../../img/patagonia/1.jpg">
+          <img src="../../img/patagonia/1.jpg" alt="Incendios en Patagonia · Imagen 1">
+        </button>
+
+        <button type="button" data-full="../../img/patagonia/2.jpg">
+          <img src="../../img/patagonia/2.jpg" alt="Bosque andino-patagónico · Imagen 2">
+        </button>
+
+        <button type="button" data-full="../../img/patagonia/3.jpg">
+          <img src="../../img/patagonia/3.jpg" alt="Restauración post-incendio · Imagen 3">
+        </button>
+
+        <button type="button" data-full="../../img/patagonia/4.jpg">
+          <img src="../../img/patagonia/4.jpg" alt="Neuquén, Río Negro y Chubut · Imagen 4">
+        </button>
+      </div>
+    <p>Pulsa una imagen para verla ampliada</p>
+    </article>
+
+  </section>
+
+  <div id="lightbox">
+    <button data-close="true">✕</button>
+    <button id="lightboxPrev" class="lightbox-arrow">❮</button>
+    <img id="lightboxImg">
+    <button id="lightboxNext" class="lightbox-arrow">❯</button>
+  </div>
+
+</main>
+
+<footer>
+    <img src="../../img/logo-blanco.png" alt="" id="logo-foot">
+
+    <div id="div-redes">
+        <a href="" class="redes"><img src="../../img/instagram.png" alt=""></a>
+        <a href="" class="redes"><img src="../../img/x.png" alt=""></a>
+        <a href="" class="redes"><img src="../../img/youtube.png" alt=""></a>
+        <a href="" class="redes"><img src="../../img/linkedin.png" alt=""></a>
+    </div>
+
+    <div>
+        <p>
+            © 2024 Renacer. Todos los derechos reservados.
+            <br>
+            Trabajo realizado por Thomas Zyska (1226459) - UADE - Desarrollo Web
+        </p>
+    </div>
+
+            <div class="idioma-switch" aria-label="Idioma">
+            <button type="button" class="idioma-btn" data-lang="es" aria-pressed="true">🇦🇷 🇪🇸</button>
+            <button type="button" class="idioma-btn" data-lang="en" aria-pressed="false">🇬🇧</button>
+        </div>
+</footer>
+
+<script src="../../scripts/dona.js"></script>
+<script src="../../scripts/proyectos.js"></script>
+  <script src="../../scripts/proyectos_i18n.js"></script>
+    <script src="../../scripts/script.js"></script>
+</body>
+</html>

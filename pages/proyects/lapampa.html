@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Proyecto de restauración ecológica en La Pampa: pastizales, estepa y recuperación post-incendio. ONG Renacer.">
+    <meta name="author" content="Thomas Zyska">
+    <link rel="icon" type="image/x-icon" href="../../../img/favicon-16x16.png">
+    <title data-i18n="titleLapampa">La Pampa - Renacer</title>
+
+    <link rel="stylesheet" href="../../styles/index.css">
+    <link rel="stylesheet" href="../../styles/proyectos.css">
+</head>
+
+<body>
+
+<header>
+    <picture>
+        <a href="../../home.html">
+            <source media="(min-width: 678px)" srcset="../../img/logo.png">
+            <img src="../../img/logo.png" alt="" id="logo">
+        </a>
+    </picture>
+    <a href="../../home.html" id="nombre">renacer</a>
+    <button aria-controls="menu-principal" aria-expanded="false" aria-label="Abrir menú" class="hamburguesa" type="button"><span></span><span></span><span></span></button>
+
+    <nav id="menu-principal">
+        <button class="menu-cerrar" type="button" aria-label="Cerrar menú">
+            ✕
+        </button>
+    <a data-i18n="navNosotros" href="../nosotros.html">NOSOTROS</a>
+    <a data-i18n="navProyectos" href="../proyectos.html">PROYECTOS</a>
+    <a data-i18n="navMapa" href="../mapa.html">MAPA</a>
+    <a data-i18n="navContacto" href="../contacto.html">CONTACTO</a>
+    <a class="boton" data-i18n="navDona" href="../dona.html">DONÁ</a>
+    </nav>
+</header>
+
+<div class="menu-overlay" data-menu-overlay></div>
+
+<main>
+
+  <section class="proy-hero" aria-label="Proyecto La Pampa">
+    <div class="proy-hero__wrap">
+      <p class="proy-hero__tag" data-i18n="lpTag">Pastizales · Estepa</p>
+                  <br>
+      <picture>
+        <source media="(min-width: 678px)" srcset="../../img/lapampa/lapampa-hero.jpg">
+        <img
+          src="../../img/lapampa-intro.jpg"
+          alt="La Pampa"
+          id="img-hero"
+        >
+      </picture>
+      <h1 data-i18n="lpH1">La Pampa</h1>
+      <p class="proy-hero__bajada" data-i18n="lpBajada">
+        Restauramos pastizales y ambientes de estepa pampeana afectados por incendios y degradación,
+        recuperando cobertura vegetal nativa, protegiendo el suelo y fortaleciendo la biodiversidad.
+      </p>
+
+      <div class="proy-cta">
+        <a class="proy-btn" href="../dona.html" data-i18n="lpBtnDonar">Donar a este proyecto</a>
+        <a class="proy-btn sec" href="#galeria" data-i18n="lpBtnGaleria">Ver galería</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="proy-wrap">
+
+    <article class="bloque" aria-label="Acumulador del proyecto">
+      <div class="acum-head">
+        <div class="acum-txt">
+          <h2 data-i18n="lpAcumTitulo">Acumulado del proyecto</h2>
+        </div>
+
+        <span class="proy-hero__tag">La Pampa</span>
+      </div>
+
+      <div class="acum-numeros" id="acumCard" data-proyecto="la-pampa">
+        <div class="acum-item">
+          <div class="k" data-i18n="lpAcumKAcum">Acumulado</div>
+          <div class="v" id="acumValor">$ 0</div>
+        </div>
+
+        <div class="acum-item">
+          <div class="k" data-i18n="lpAcumKMeta">Meta</div>
+          <div class="v" id="metaValor">$ 0</div>
+        </div>
+
+        <div class="acum-item">
+          <div class="k" data-i18n="lpAcumKProg">Progreso</div>
+          <div class="v" id="pctValor">0%</div>
+        </div>
+
+        <div class="acum-item">
+          <div class="k" data-i18n="lpAcumKEst">Estado</div>
+          <div class="v" id="estadoValor" data-i18n="lpEstado">En curso</div>
+        </div>
+      </div>
+
+      <div class="barra">
+        <div id="barraFill" style="width:0%;"></div>
+      </div>
+
+      <div class="acum-foot">
+        <p data-i18n="lpGracias">Gracias por ayudar a recuperar los pastizales.</p>
+        <a class="proy-btn sec" href="../dona.html" data-i18n="lpIrDona">Ir a Doná</a>
+      </div>
+    </article>
+
+    <article class="bloque">
+      <h2 data-i18n="lpH2Valor">El valor de los pastizales y la estepa pampeana</h2>
+      <p data-i18n-html="lpPValor">
+        Los pastizales y ambientes de estepa de La Pampa son esenciales para la salud del suelo,
+        la regulación hídrica y la biodiversidad. Sostienen especies adaptadas a climas más secos,
+        protegen contra la erosión y funcionan como base para cadenas tróficas y servicios ecosistémicos
+        claves en el centro del país.
+      </p>
+    </article>
+
+    <article class="bloque">
+      <h2 data-i18n="lpH2Que">Qué hacemos en Renacer</h2>
+      <p data-i18n-html="lpPQue">
+        Nuestro enfoque se basa en restauración ecológica aplicada: recuperación de cobertura vegetal nativa,
+        estabilización de suelos, fortalecimiento de cortinas forestales y monitoreo de la regeneración.
+        El objetivo es reducir la vulnerabilidad frente a incendios y degradación, y acelerar la recuperación del ecosistema.
+      </p>
+      <ul class="proy-puntos">
+        <li data-i18n="lpLi1">Revegetación con especies nativas y manejo de áreas degradadas.</li>
+        <li data-i18n="lpLi2">Protección del suelo y reducción de erosión.</li>
+        <li data-i18n="lpLi3">Monitoreo de supervivencia y mantenimiento.</li>
+      </ul>
+    </article>
+
+    <article class="bloque">
+      <h2 data-i18n="lpH2Impacto">El impacto de los incendios en La Pampa</h2>
+      <p data-i18n-html="lpPImpacto">
+        En La Pampa, los incendios se ven potenciados por períodos de sequía, altas temperaturas,
+        vientos intensos y la acumulación de biomasa seca. En ambientes de pastizal y estepa, el fuego
+        puede propagarse con gran velocidad, afectando extensiones enormes en poco tiempo. Cuando esto ocurre,
+        no solo se pierde vegetación: también se altera profundamente el funcionamiento del ecosistema.
+        <br><br>
+        El primer impacto visible es la pérdida de cobertura vegetal que protege el suelo. Sin esa “alfombra” de pastos,
+        el terreno queda expuesto a la erosión del viento y del agua. Esto puede generar compactación, pérdida de materia orgánica
+        y disminución de la infiltración, haciendo que el suelo retenga menos humedad y se vuelva más vulnerable a nuevas sequías.
+        <br><br>
+        A nivel de biodiversidad, los incendios afectan especies que dependen de la estructura del pastizal para refugio,
+        alimentación y reproducción. Aves de pastizal, pequeños mamíferos, reptiles e insectos polinizadores pierden hábitat,
+        y muchas poblaciones tardan años en recuperarse. Además, la fragmentación del ambiente dificulta la recolonización natural.
+        <br><br>
+        Otro riesgo posterior al incendio es la invasión de especies oportunistas o exóticas, que pueden colonizar rápidamente
+        áreas degradadas y competir con las nativas. Si no se actúa a tiempo, el ecosistema puede cambiar su composición,
+        perdiendo diversidad y estabilidad.
+        <br><br>
+        En este escenario, la restauración activa es clave. Recuperar la cobertura vegetal nativa, reforzar la protección del suelo,
+        favorecer la regeneración natural y monitorear la evolución permite acelerar la recuperación del sistema y reducir la probabilidad
+        de degradación permanente. Restaurar La Pampa es proteger el suelo, el agua y la biodiversidad del centro del país.
+      </p>
+    </article>
+
+    <article class="bloque" id="galeria">
+      <h2 data-i18n="lpH2Galeria">Galería</h2>
+
+      <div class="galeria">
+        <button type="button" data-full="../../img/lapampa/1.jpg">
+          <img src="../../img/lapampa/1.jpg" alt="La Pampa · Imagen 1">
+        </button>
+
+        <button type="button" data-full="../../img/lapampa/2.jpg">
+          <img src="../../img/lapampa/2.jpg" alt="Pastizales pampeanos · Imagen 2">
+        </button>
+
+        <button type="button" data-full="../../img/lapampa/3.jpg">
+          <img src="../../img/lapampa/3.jpg" alt="Incendios y recuperación · Imagen 3">
+        </button>
+
+        <button type="button" data-full="../../img/lapampa/4.jpg">
+          <img src="../../img/lapampa/4.jpg" alt="Restauración ecológica · Imagen 4">
+        </button>
+      </div>
+      <p data-i18n="lpGaleriaTip">Pulsa una imagen para verla ampliada</p>
+    </article>
+
+  </section>
+
+  <div id="lightbox">
+    <button data-close="true">✕</button>
+    <button id="lightboxPrev" class="lightbox-arrow">❮</button>
+    <img id="lightboxImg">
+    <button id="lightboxNext" class="lightbox-arrow">❯</button>
+  </div>
+
+
+</main>
+
+<footer>
+    <img src="../../img/logo-blanco.png" alt="" id="logo-foot">
+
+    <div id="div-redes">
+        <a href="" class="redes"><img src="../../img/instagram.png" alt=""></a>
+        <a href="" class="redes"><img src="../../img/x.png" alt=""></a>
+        <a href="" class="redes"><img src="../../img/youtube.png" alt=""></a>
+        <a href="" class="redes"><img src="../../img/linkedin.png" alt=""></a>
+    </div>
+
+    <div>
+        <p data-i18n-html="footerHtml">© 2024 Renacer. Todos los derechos reservados.<br>Trabajo realizado por Thomas Zyska (1226459) - UADE - Desarrollo Web<br>Profesor: Bellanti Emanuel</p>
+    </div>
+</footer>
+
+<script src="../../scripts/script.js"></script>
+<script src="../../scripts/dona.js"></script>
+<script src="../../scripts/proyectos.js"></script>
+  <script src="../../scripts/proyectos_i18n.js"></script>
+    <script src="../../scripts/script.js"></script>
+</body>
+</html>

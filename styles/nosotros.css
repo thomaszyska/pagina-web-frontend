@@ -1,0 +1,277 @@
+#seccion-mvv{
+    background-color: #286628;
+    box-shadow: none;
+    width: 100%;
+    margin-left: 0;
+    margin-right: 0;
+    padding-top: 5vh;
+    padding-bottom: 8vh;
+}
+
+#seccion-mvv h3{
+    color: #F8F8F8;
+}
+
+#mvv-contenedor{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    gap: 5vh;
+    flex-wrap: wrap;
+}
+
+.caja .mvv-card{
+    width: auto;
+    height: 30vh;
+}
+
+    #mvv-contenedor .mvv-card{
+        height: auto;
+        min-height: 45vh;
+        max-width: 40vh;
+        padding-top: 4vh;
+        padding-bottom: 4vh;
+    }
+
+    #mvv-contenedor .mvv-card img{
+        margin-top: 0;
+        width: 15vh;
+        height: auto;
+    }
+
+    #mvv-contenedor .mvv-card p{
+        margin-top: 2vh;
+        font-size: 2vh;
+        line-height: 1.5;
+    }
+
+    #mvv-contenedor .mvv-card h3{
+        color: #286628;
+        font-family: poppins, sans-serif;
+        font-weight: 600;
+        font-size: 3vh;
+    }
+
+#valores-display{
+  width: 100%;
+  margin: auto;
+  margin-top: 1vh;
+  border-radius: 1vh;
+  display: grid;
+  grid-template-columns: 14% 72% 14%;
+  align-items: center;
+  min-height: 40vh;
+}
+
+    #valor-texto{
+    width: 100%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    }
+
+        #valor-texto h3{
+            font-family: poppins, sans-serif;
+            font-weight: 600;
+            font-size: 1vh;
+            margin-bottom: 1vh;
+            text-decoration: underline;
+        }
+
+        #valor-texto p{
+        width: 100%;
+        margin: 2vh auto 0 auto;
+        }
+
+    .flecha-valores{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 4vh;
+    line-height: 1;     
+    padding: 1vh 0;     
+    cursor: pointer;
+    user-select: none;
+    }
+
+    #flecha-valores-izq{ justify-self: start; }
+    #flecha-valores-der{ justify-self: end; }
+
+        .flecha-valores:hover{
+            transform: scale(1.2);
+        }
+
+#fila-equipo{
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 4vh;
+    width: 90%;
+    margin-top: 0;
+    padding-bottom: 5vh;
+}
+
+    #img-equipo{
+        width: 30vh;
+        height: auto;
+    }
+
+    #fila-equipo p{
+        width: 80%;
+        margin-top: 2vh;
+        font-size: 2vh;
+        line-height: 1.5;
+    }
+
+    #fila-equipo span{
+        font-weight: 600;
+    }
+
+/* =========================
+   RESPONSIVE NOSOTROS (CELULAR)
+   ========================= */
+
+@media (max-width: 768px){
+
+  /* Secciones más anchas */
+  .secciones{
+    width: 92%;
+    margin-left: 4%;
+    margin-right: 4%;
+    padding-top: 2vh;
+  }
+
+  .secciones h3{
+    width: 90%;
+    text-align: center;
+    font-size: 3.1vh;
+  }
+
+  .secciones p{
+    width: 88%;
+    font-size: 2vh;
+    margin: 2vh 0;
+    margin-bottom: 2.5vh;
+  }
+
+  /* FILAS (Historia / Equipo / Transparencia) */
+  #fila-equipo{
+    flex-direction: column;
+    align-items: center;
+    gap: 2.5vh;
+    width: 92%;
+    padding-bottom: 3vh;
+  }
+
+  #fila-equipo img{
+    width: 16vh;
+    height: auto;
+  }
+
+  #img-equipo{
+    width: 22vh;
+    height: auto;
+  }
+
+  #fila-equipo p{
+    width: 100%;
+    margin-top: 0;
+    font-size: 2vh;
+    line-height: 1.55;
+    text-align: center;
+  }
+
+  /* SECCIÓN MVV */
+  #seccion-mvv{
+    padding-top: 4vh;
+    padding-bottom: 6vh;
+  }
+
+  #mvv-contenedor{
+    flex-direction: column;
+    align-items: center;
+    gap: 3vh;
+    padding-left: 4%;
+    padding-right: 4%;
+  }
+
+  #mvv-contenedor .mvv-card{
+    width: 80%;
+    max-width: 100%;
+    min-height: auto;
+    padding-top: 3vh;
+    padding-bottom: 3vh;
+  }
+
+  #mvv-contenedor .mvv-card img{
+    width: 12vh;
+  }
+
+  #mvv-contenedor .mvv-card h3{
+    font-size: 2.7vh;
+  }
+
+  #mvv-contenedor .mvv-card p{
+    font-size: 2vh;
+    line-height: 1.55;
+    width: 88%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  /* VALORES (flechas + texto) */
+  #valores-display{
+    grid-template-columns: 18% 64% 18%;
+    min-height: 26vh;
+  }
+
+  .flecha-valores{
+    font-size: 4.5vh;
+  }
+
+  #valor-texto{
+    padding-left: 3%;
+    padding-right: 3%;
+  }
+
+  #valor-texto h3{
+    font-size: 2.3vh;
+    margin-bottom: 1vh;
+  }
+
+  #valor-texto p{
+    font-size: 2vh;
+    line-height: 1.55;
+  }
+}
+
+/* EXTRA: celulares chicos */
+@media (max-width: 420px){
+
+  .secciones h3{
+    font-size: 2.9vh;
+  }
+
+  #fila-equipo img{
+    width: 14vh;
+  }
+
+  #img-equipo{
+    width: 20vh;
+  }
+
+  #valores-display{
+    grid-template-columns: 20% 60% 20%;
+    min-height: 24vh;
+  }
+
+  .flecha-valores{
+    font-size: 4.2vh;
+  }
+}
+

@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Proyecto de restauración del bosque serrano en Córdoba. ONG Renacer.">
+    <meta name="author" content="Thomas Zyska">
+    <link rel="icon" type="image/x-icon" href="../../../img/favicon-16x16.png">
+    <title>Córdoba - Renacer</title>
+
+    <link rel="stylesheet" href="../../styles/index.css">
+    <link rel="stylesheet" href="../../styles/proyectos.css">
+</head>
+
+<body>
+
+<header>
+    <picture>
+        <a href="../../home.html">
+            <source media="(min-width: 678px)" srcset="../../img/logo.png">
+            <img src="../../img/logo.png" alt="" id="logo">
+        </a>
+    </picture>
+    <a href="../../home.html" id="nombre">renacer</a>
+    <button aria-controls="menu-principal" aria-expanded="false" aria-label="Abrir menú" class="hamburguesa" type="button"><span></span><span></span><span></span></button>
+
+    <nav id="menu-principal">
+        <button class="menu-cerrar" type="button" aria-label="Cerrar menú">
+            ✕
+        </button>
+    <a data-i18n="navNosotros" href="../nosotros.html">NOSOTROS</a>
+    <a data-i18n="navProyectos" href="../proyectos.html">PROYECTOS</a>
+    <a data-i18n="navMapa" href="../mapa.html">MAPA</a>
+    <a data-i18n="navContacto" href="../contacto.html">CONTACTO</a>
+    <a class="boton" data-i18n="navDona" href="../dona.html">DONÁ</a>
+    </nav>
+</header>
+
+<div class="menu-overlay" data-menu-overlay></div>
+
+<main>
+
+  <section class="proy-hero" aria-label="Proyecto Córdoba">
+    <div class="proy-hero__wrap">
+      <p class="proy-hero__tag">Bosque nativo · Incendios</p>
+      <picture>
+        <source media="(min-width: 678px)" srcset="../../img/cordoba-intro.jpeg">
+        <img
+          src="../../img/cordoba-intro.jpeg"
+          alt="Córdoba"
+          id="img-hero"
+        >
+      </picture>
+      <h1>Córdoba</h1>
+      <p class="proy-hero__bajada">
+        Restauramos el bosque serrano afectado por incendios recurrentes,
+        recuperando suelos, reintroduciendo especies nativas y fortaleciendo la
+        resiliencia ecológica de las sierras.
+      </p>
+
+      <div class="proy-cta">
+        <a class="proy-btn" href="../dona.html">Donar a este proyecto</a>
+        <a class="proy-btn sec" href="#galeria">Ver galería</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="proy-wrap">
+
+    <article class="bloque" aria-label="Acumulador del proyecto">
+      <div class="acum-head">
+        <div class="acum-txt">
+          <h2>Acumulado del proyecto</h2>
+        </div>
+
+        <span class="proy-hero__tag">Córdoba</span>
+      </div>
+
+      <div class="acum-numeros" id="acumCard" data-proyecto="cordoba">
+        <div class="acum-item">
+          <div class="k">Acumulado</div>
+          <div class="v" id="acumValor">$ 0</div>
+        </div>
+
+        <div class="acum-item">
+          <div class="k">Meta</div>
+          <div class="v" id="metaValor">$ 0</div>
+        </div>
+
+        <div class="acum-item">
+          <div class="k">Progreso</div>
+          <div class="v" id="pctValor">0%</div>
+        </div>
+
+        <div class="acum-item">
+          <div class="k">Estado</div>
+          <div class="v" id="estadoValor">En curso</div>
+        </div>
+      </div>
+
+      <div class="barra">
+        <div id="barraFill" style="width:0%;"></div>
+      </div>
+
+      <div class="acum-foot">
+        <p>Gracias por ayudar a restaurar el bosque serrano.</p>
+        <a class="proy-btn sec" href="../dona.html">Ir a Doná</a>
+      </div>
+    </article>
+
+    <article class="bloque">
+      <h2>El valor del bosque serrano</h2>
+      <p>
+        El bosque nativo de las Sierras de Córdoba es un ecosistema clave para la
+        regulación hídrica, la protección del suelo y la biodiversidad regional.
+        Actúa como esponja natural frente a lluvias intensas, reduce la erosión y
+        sostiene especies endémicas de flora y fauna.
+      </p>
+    </article>
+
+    <article class="bloque">
+      <h2>Qué hacemos en Renacer</h2>
+      <p>
+        Nuestro trabajo se enfoca en la restauración ecológica del bosque serrano
+        mediante plantación de especies nativas, recuperación de suelos degradados,
+        control de invasoras y monitoreo de la regeneración natural.
+      </p>
+      <ul class="proy-puntos">
+        <li>Reforestación con especies autóctonas.</li>
+        <li>Protección del suelo y control de erosión.</li>
+        <li>Seguimiento de la recuperación post-incendio.</li>
+      </ul>
+    </article>
+
+    <article class="bloque">
+      <h2>El impacto de los incendios en las Sierras de Córdoba</h2>
+      <p>
+        En las últimas décadas, las Sierras de Córdoba han sufrido incendios cada vez
+        más frecuentes e intensos, impulsados por sequías prolongadas, altas
+        temperaturas y la acción humana. Muchos de estos incendios se originan por
+        negligencia, prácticas productivas inadecuadas o intencionalidad, y afectan
+        principalmente al bosque nativo serrano.
+        <br><br>
+        A diferencia de otros ecosistemas, el bosque serrano no está adaptado a
+        incendios recurrentes. El fuego destruye la cobertura vegetal, expone los
+        suelos a la erosión hídrica y eólica, y reduce drásticamente la capacidad del
+        ecosistema para retener agua. Esto incrementa el riesgo de inundaciones
+        repentinas y deslizamientos en épocas de lluvia.
+        <br><br>
+        La fauna también se ve gravemente afectada: reptiles, aves, pequeños mamíferos
+        y polinizadores pierden refugio y alimento, provocando desplazamientos y
+        mortandad. La pérdida de biodiversidad altera el equilibrio ecológico y
+        dificulta la recuperación natural.
+        <br><br>
+        Otro impacto crítico es la degradación del suelo. La quema elimina la materia
+        orgánica, reduce la fertilidad y favorece la compactación. En muchos casos,
+        esto impide que el bosque se regenere por sí solo y abre la puerta a especies
+        invasoras que compiten con las nativas.
+        <br><br>
+        Frente a este escenario, la restauración activa resulta fundamental. Acompañar
+        los procesos naturales, reintroducir especies clave y proteger el suelo permite
+        acelerar la recuperación del bosque y reducir la vulnerabilidad frente a
+        futuros incendios. Restaurar el bosque serrano es proteger el agua, la
+        biodiversidad y la calidad de vida de las comunidades locales.
+      </p>
+    </article>
+
+    <article class="bloque" id="galeria">
+      <h2>Galería</h2>
+
+      <div class="galeria">
+        <button type="button" data-full="../../img/cordoba/1.jpg">
+          <img src="../../img/cordoba/1.jpg" alt="Incendios en Córdoba · Imagen 1">
+        </button>
+
+        <button type="button" data-full="../../img/cordoba/2.jpg">
+          <img src="../../img/cordoba/2.jpg" alt="Bosque serrano · Imagen 2">
+        </button>
+
+        <button type="button" data-full="../../img/cordoba/3.jpg">
+          <img src="../../img/cordoba/3.jpg" alt="Restauración ecológica · Imagen 3">
+        </button>
+
+        <button type="button" data-full="../../img/cordoba/4.jpg">
+          <img src="../../img/cordoba/4.jpg" alt="Sierras de Córdoba · Imagen 4">
+        </button>
+      </div>
+      <p>Pulsa una imagen para verla ampliada</p>
+    </article>
+
+  </section>
+
+  <div id="lightbox">
+    <button data-close="true">✕</button>
+    <button id="lightboxPrev" class="lightbox-arrow">❮</button>
+    <img id="lightboxImg">
+    <button id="lightboxNext" class="lightbox-arrow">❯</button>
+  </div>
+
+</main>
+
+<footer>
+    <img src="../../img/logo-blanco.png" alt="" id="logo-foot">
+
+    <div id="div-redes">
+        <a href="" class="redes"><img src="../../img/instagram.png" alt=""></a>
+        <a href="" class="redes"><img src="../../img/x.png" alt=""></a>
+        <a href="" class="redes"><img src="../../img/youtube.png" alt=""></a>
+        <a href="" class="redes"><img src="../../img/linkedin.png" alt=""></a>
+    </div>
+
+    <div>
+        <p>
+            © 2024 Renacer. Todos los derechos reservados.
+            <br>
+            Trabajo realizado por Thomas Zyska (1226459) - UADE - Desarrollo Web
+        </p>
+    </div>
+            <div class="idioma-switch" aria-label="Idioma">
+            <button type="button" class="idioma-btn" data-lang="es" aria-pressed="true">🇦🇷 🇪🇸</button>
+            <button type="button" class="idioma-btn" data-lang="en" aria-pressed="false">🇬🇧</button>
+        </div>
+</footer>
+
+<script src="../../scripts/dona.js"></script>
+<script src="../../scripts/proyectos.js"></script>
+  <script src="../../scripts/proyectos_i18n.js"></script>
+  <script src="../../scripts/script.js"></script>
+</body>
+</html>
